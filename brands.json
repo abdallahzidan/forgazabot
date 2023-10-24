@@ -1,0 +1,44 @@
+{
+    "food": [
+      "https://i.postimg.cc/FFdPkb7K/STARBUCKS.png",
+      "https://i.postimg.cc/QN2fQBTJ/MACKDONLAS.png",
+      "https://i.postimg.cc/8cRMBz2Z/carfour.png",
+      "https://i.postimg.cc/L5x6pdLH/dominos.png",
+      "https://i.postimg.cc/jSpqK4wJ/PAPAJONES.png",
+      "https://i.postimg.cc/SRPFdmcz/burgerking.png",
+      "https://i.postimg.cc/BQPds9xM/pizza-king.png",
+      "https://i.postimg.cc/4NvjnvS9/subway.png",
+      "https://i.postimg.cc/xTPF9fXG/nstle.png",
+      "https://i.postimg.cc/59Bsm4Sc/hardees.png",
+      "https://i.postimg.cc/x1hG2h3y/cocacola.png",
+      "https://i.postimg.cc/T1dg06TG/libton.png"
+    ],
+    "Fashion": [
+      "https://i.postimg.cc/28WXMdDt/nike.png",
+      "https://i.postimg.cc/WpHw8RL6/ZALANDO.png",
+      "https://i.postimg.cc/mDW0tcVk/PUMA.png",
+      "https://i.postimg.cc/k4Cp70Xt/ADDIDAS.png" 
+      
+    ],
+     "IT": [
+      "https://i.postimg.cc/3RKk5FVF/hp.png",
+      "https://i.postimg.cc/x8Z8mDC6/IBM.png",
+      "https://i.postimg.cc/zX93Xr4B/oracle.png",
+       "https://i.postimg.cc/qRbvfV8p/sap.png",
+       "https://i.postimg.cc/7PJ5vhQc/semiens.png"
+    ],
+      "Motor": [
+      "https://i.postimg.cc/jSc567LW/audi.png",
+      "https://i.postimg.cc/4dDN4vF0/hyyndai.png",
+      "https://i.postimg.cc/02d2xwGt/bmw.png"
+    ],
+    "Insurance": [
+      "https://i.postimg.cc/3w0srM5K/axa.png",
+      "https://i.postimg.cc/GtRwSXfb/allianz.png"
+    ],
+    "other": [
+      "1",
+      "2",
+      "3"
+    ]
+  }
