@@ -1,8 +1,16 @@
 from typing import Final
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes,filters
-TOKEN :Final = "*********"
+import json
+
+TOKEN :Final = "6***"
 BOT_USERNAME :Final  = "@savegazabot"
+
+jsonString = {}
+ 
+with open('brands.json') as json_file:
+    jsonString = json.load(json_file)
+    
 
 
 #commands
@@ -24,23 +32,27 @@ async def help_command(update:Update,context:ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(" how can i help ?")
 
 async def food_command(update:Update,context:ContextTypes.DEFAULT_TYPE):
-    await context.bot.send_photo(chat_id=update.effective_chat.id, photo = "https://ibb.co/6bvk0YP")
-    await context.bot.send_photo(chat_id=update.effective_chat.id, photo = "https://ibb.co/fY0xSRj")
-    await context.bot.send_photo(chat_id=update.effective_chat.id, photo = "https://imgtr.ee/image/IId5rv")
+    for i in jsonString['food']:
+        await context.bot.send_photo(chat_id=update.effective_chat.id, photo = i) 
+    #await context.bot.send_photo(chat_id=update.effective_chat.id, photo = "https://ibb.co/6bvk0YP")
+    #await context.bot.send_photo(chat_id=update.effective_chat.id, photo = "https://ibb.co/fY0xSRj")
+    #await context.bot.send_photo(chat_id=update.effective_chat.id, photo = "https://imgtr.ee/image/IId5rv")
 
 async def fashion_command(update:Update,context:ContextTypes.DEFAULT_TYPE):
-    await context.bot.send_photo(chat_id=update.effective_chat.id, photo = "https://ibb.co/R4SkL0S")
-    await context.bot.send_photo(chat_id=update.effective_chat.id, photo = "https://ibb.co/3YV2wr8")
-    await context.bot.send_photo(chat_id=update.effective_chat.id, photo = "https://imgtr.ee/image/IIdDRT")
+    for i in jsonString['Fashion']:
+        await context.bot.send_photo(chat_id=update.effective_chat.id, photo = i) 
 
 async def motor_command(update:Update,context:ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("BMW GROUP \n AUDI ")
+    for i in jsonString['Motor']:
+        await context.bot.send_photo(chat_id=update.effective_chat.id, photo = i) 
     
 async def insurance_command(update:Update,context:ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("AXA \n  ALLIANZ")
+    for i in jsonString['Insurance']:
+        await context.bot.send_photo(chat_id=update.effective_chat.id, photo = i) 
   
 async def it_command(update:Update,context:ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("HP \n Siemens \n SAP")
+    for i in jsonString['IT']:
+        await context.bot.send_photo(chat_id=update.effective_chat.id, photo = i) 
               
     
 async def support_command(update:Update,context:ContextTypes.DEFAULT_TYPE):
