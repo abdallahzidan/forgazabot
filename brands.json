@@ -1,44 +1,145 @@
 {
-    "food": [
-      "https://i.postimg.cc/FFdPkb7K/STARBUCKS.png",
-      "https://i.postimg.cc/QN2fQBTJ/MACKDONLAS.png",
-      "https://i.postimg.cc/8cRMBz2Z/carfour.png",
-      "https://i.postimg.cc/L5x6pdLH/dominos.png",
-      "https://i.postimg.cc/jSpqK4wJ/PAPAJONES.png",
-      "https://i.postimg.cc/SRPFdmcz/burgerking.png",
-      "https://i.postimg.cc/BQPds9xM/pizza-king.png",
-      "https://i.postimg.cc/4NvjnvS9/subway.png",
-      "https://i.postimg.cc/xTPF9fXG/nstle.png",
-      "https://i.postimg.cc/59Bsm4Sc/hardees.png",
-      "https://i.postimg.cc/x1hG2h3y/cocacola.png",
-      "https://i.postimg.cc/T1dg06TG/libton.png"
-    ],
-    "Fashion": [
-      "https://i.postimg.cc/28WXMdDt/nike.png",
-      "https://i.postimg.cc/WpHw8RL6/ZALANDO.png",
-      "https://i.postimg.cc/mDW0tcVk/PUMA.png",
-      "https://i.postimg.cc/k4Cp70Xt/ADDIDAS.png" 
-      
-    ],
-     "IT": [
-      "https://i.postimg.cc/3RKk5FVF/hp.png",
-      "https://i.postimg.cc/x8Z8mDC6/IBM.png",
-      "https://i.postimg.cc/zX93Xr4B/oracle.png",
-       "https://i.postimg.cc/qRbvfV8p/sap.png",
-       "https://i.postimg.cc/7PJ5vhQc/semiens.png"
-    ],
-      "Motor": [
-      "https://i.postimg.cc/jSc567LW/audi.png",
-      "https://i.postimg.cc/4dDN4vF0/hyyndai.png",
-      "https://i.postimg.cc/02d2xwGt/bmw.png"
-    ],
-    "Insurance": [
-      "https://i.postimg.cc/3w0srM5K/axa.png",
-      "https://i.postimg.cc/GtRwSXfb/allianz.png"
-    ],
-    "other": [
-      "1",
-      "2",
-      "3"
-    ]
-  }
+  "brands":[
+    {
+      "name": "starbucks",
+      "logo": "https://i.postimg.cc/FFdPkb7K/STARBUCKS.png",
+      "category": "food"
+    },
+    {
+      "name": "mcdonalds",
+      "logo": "https://i.postimg.cc/QN2fQBTJ/MACKDONLAS.png",
+      "category": "food"
+    },
+    {
+      "name": "carrefour",
+      "logo": "https://i.postimg.cc/8cRMBz2Z/carfour.png",
+      "category": "market"
+    },
+    {
+      "name": "dominos",
+      "logo": "https://i.postimg.cc/L5x6pdLH/dominos.png",
+      "category": "food"
+    },
+    {
+      "name": "papajohns",
+      "logo": "https://i.postimg.cc/jSpqK4wJ/PAPAJONES.png",
+      "category": "food"
+    },
+    {
+      "name": "burgerking",
+      "logo": "https://i.postimg.cc/SRPFdmcz/burgerking.png",
+      "category": "food"
+    },
+    {
+      "name": "subway",
+      "logo": "https://i.postimg.cc/4NvjnvS9/subway.png",
+      "category": "food"
+    },
+    {
+      "name": "pizzahut",
+      "logo": "https://i.postimg.cc/BQPds9xM/pizza-king.png",
+      "category": "food"
+    },
+    {
+      "name": "nestle",
+      "logo": "https://i.postimg.cc/xTPF9fXG/nstle.png",
+      "category": "food"
+    },
+    {
+      "name": "hardees",
+      "logo": "https://i.postimg.cc/59Bsm4Sc/hardees.png",
+      "category": "food"
+    },
+    {
+      "name": "cocacola",
+      "logo": "https://i.postimg.cc/x1hG2h3y/cocacola.png",
+      "category": "food"
+    },
+    {
+      "name": "pepsi",
+      "logo": "https://i.postimg.cc/x1hG2h3y/cocacola.png",
+      "category": "food"
+    },
+    {
+      "name": "lipton",
+      "logo": "https://i.postimg.cc/T1dg06TG/libton.png",
+      "category": "food"
+    },
+    {
+      "name": "nike",
+      "logo": "https://i.postimg.cc/28WXMdDt/nike.png",
+      "category": "fashoin"
+    },
+    {
+      "name": "zalando",
+      "logo": "https://i.postimg.cc/WpHw8RL6/ZALANDO.png",
+      "category": "fashoin"
+    },
+    {
+      "name": "puma",
+      "logo": "https://i.postimg.cc/mDW0tcVk/PUMA.png",
+      "category": "fashoin"
+    },
+    {
+      "name": "adidas",
+      "logo": "https://i.postimg.cc/k4Cp70Xt/ADDIDAS.png",
+      "category": "fashoin"
+    },
+    {
+      "name": "hp",
+      "logo": "https://i.postimg.cc/3RKk5FVF/hp.png",
+      "category": "it"
+    },
+    {
+      "name": "ibm",
+      "logo": "https://i.postimg.cc/x8Z8mDC6/IBM.png",
+      "category": "it"
+    },
+    {
+      "name": "oracle",
+      "logo": "https://i.postimg.cc/zX93Xr4B/oracle.png",
+      "category": "it"
+    },
+    {
+      "name": "sap",
+      "logo": "https://i.postimg.cc/qRbvfV8p/sap.png",
+      "category": "it"
+    },
+    {
+      "name": "Siemens",
+      "logo": "https://i.postimg.cc/7PJ5vhQc/semiens.png",
+      "category": "it"
+    },
+    {
+      "name": "Siemens",
+      "logo": "https://i.postimg.cc/7PJ5vhQc/semiens.png",
+      "category": "it"
+    },
+    {
+      "name": "audi",
+      "logo": "https://i.postimg.cc/jSc567LW/audi.png",
+      "category": "motor"
+    },
+    {
+      "name": "Hyundai",
+      "logo": "https://i.postimg.cc/4dDN4vF0/hyyndai.png",
+      "category": "motor"
+    },
+    {
+      "name": "bmw",
+      "logo": "https://i.postimg.cc/02d2xwGt/bmw.png",
+      "category": "motor"
+    },
+    {
+      "name": "axa",
+      "logo": "https://i.postimg.cc/3w0srM5K/axa.png",
+      "category": "insurance"
+    },
+    {
+      "name": "Siemens",
+      "logo": "https://i.postimg.cc/GtRwSXfb/allianz.png",
+      "category": "insurance"
+    }
+    
+  ]
+}
