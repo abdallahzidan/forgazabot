@@ -4,12 +4,15 @@ from telegram.ext import Application, CommandHandler, MessageHandler, ContextTyp
 from translate import Translator
 import json
 import requests
-import re 
+import os
+from dotenv import load_dotenv
 
-TOKEN :Final = "**"
-BOT_USERNAME :Final  = "@savegazabot"
-API_KEY = "**"
-SEARCH_ENGINE_ID = "**"
+load_dotenv()
+
+TOKEN: Final = os.environ['BOT_TOKEN']
+BOT_USERNAME: Final = os.environ['BOT_NAME']
+API_KEY = os.environ['API_KEY']
+SEARCH_ENGINE_ID = os.environ['SEARCH_ENGINE_ID']
 
 jsonString = {}
  
