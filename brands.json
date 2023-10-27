@@ -16,55 +16,55 @@
       "name": "kfc",
       "logo": "",
       "category": "food",
-      "reason":""
+      "reason":" --"
     },
     {
       "name": "carrefour",
       "logo": "https://i.postimg.cc/8cRMBz2Z/carfour.png",
       "category": "market",
-      "reason":""
+      "reason":" --"
     },
     {
       "name": "dominos",
       "logo": "https://i.postimg.cc/L5x6pdLH/dominos.png",
       "category": "food",
-      "reason":""
+      "reason":" --"
     },
     {
       "name": "papajohns",
       "logo": "https://i.postimg.cc/jSpqK4wJ/PAPAJONES.png",
       "category": "food",
-      "reason":""
+      "reason":" --"
     },
     {
       "name": "burgerking",
       "logo": "https://i.postimg.cc/SRPFdmcz/burgerking.png",
       "category": "food",
-      "reason":""
+      "reason":" --"
     },
     {
       "name": "subway",
       "logo": "https://i.postimg.cc/4NvjnvS9/subway.png",
       "category": "food",
-      "reason":""
+      "reason":" --"
     },
     {
       "name": "pizzahut",
       "logo": "https://i.postimg.cc/BQPds9xM/pizza-king.png",
       "category": "food",
-      "reason":""
+      "reason":" --"
     },
     {
       "name": "nestle",
       "logo": "https://i.postimg.cc/xTPF9fXG/nstle.png",
       "category": "food",
-      "reason":""
+      "reason":" --"
     },
     {
       "name": "hardees",
       "logo": "https://i.postimg.cc/59Bsm4Sc/hardees.png",
       "category": "food",
-      "reason":""
+      "reason":" --"
     },
     {
       "name": "cocacola",
@@ -76,25 +76,25 @@
       "name": "pepsi",
       "logo": "https://i.postimg.cc/x1hG2h3y/cocacola.png",
       "category": "food",
-      "reason":""
+      "reason":" --"
     },
     {
       "name": "lipton",
       "logo": "https://i.postimg.cc/T1dg06TG/libton.png",
       "category": "food",
-      "reason":""
+      "reason":" --"
     },
     {
       "name": "nike",
       "logo": "https://i.postimg.cc/28WXMdDt/nike.png",
       "category": "fashoin",
-      "reason":""
+      "reason":" --"
     },
     {
       "name": "zalando",
       "logo": "https://i.postimg.cc/WpHw8RL6/ZALANDO.png",
       "category": "fashoin",
-      "reason":""
+      "reason":" --"
     },
     {
       "name": "puma",
@@ -106,7 +106,7 @@
       "name": "adidas",
       "logo": "https://i.postimg.cc/k4Cp70Xt/ADDIDAS.png",
       "category": "fashoin",
-      "reason":""
+      "reason":" --"
     },
     {
       "name": "hp",
@@ -119,43 +119,43 @@
       "name": "ibm",
       "logo": "https://i.postimg.cc/x8Z8mDC6/IBM.png",
       "category": "it",
-      "reason":""
+      "reason":" --"
     },
     {
       "name": "oracle",
       "logo": "https://i.postimg.cc/zX93Xr4B/oracle.png",
       "category": "it",
-      "reason":""
+      "reason":" --"
     },
     {
       "name": "sap",
       "logo": "https://i.postimg.cc/qRbvfV8p/sap.png",
       "category": "it",
-      "reason":""
+      "reason":" --"
     },
     {
       "name": "Siemens",
       "logo": "https://i.postimg.cc/7PJ5vhQc/semiens.png",
       "category": "it",
-      "reason":""
+      "reason":" --"
     },
     {
       "name": "Siemens",
       "logo": "https://i.postimg.cc/7PJ5vhQc/semiens.png",
       "category": "it",
-      "reason":""
+      "reason":" --"
     },
     {
       "name": "audi",
       "logo": "https://i.postimg.cc/jSc567LW/audi.png",
       "category": "motor",
-      "reason":""
+      "reason":" --"
     },
     {
       "name": "Hyundai",
       "logo": "https://i.postimg.cc/4dDN4vF0/hyyndai.png",
       "category": "motor",
-      "reason":""
+      "reason":" --"
     },
     {
       "name": "bmw",
