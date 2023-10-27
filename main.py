@@ -1,11 +1,12 @@
 from typing import Final
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes,filters
+from translate import Translator
 import json
 import requests
 import re 
 
-TOKEN :Final = "***"
+TOKEN :Final = "**"
 BOT_USERNAME :Final  = "@savegazabot"
 API_KEY = "**"
 SEARCH_ENGINE_ID = "**"
@@ -14,6 +15,11 @@ jsonString = {}
  
 with open('brands.json') as json_file:
     jsonString = json.load(json_file)
+    
+def translate_arabic_to_english(text):
+    translator = Translator(to_lang="en", from_lang="ar")
+    translation = translator.translate(text)
+    return translation
     
 def perform_search(query, search_type="web"):
     # Construct the URL for the Google Custom Search JSON API
@@ -27,6 +33,7 @@ def perform_search(query, search_type="web"):
 
     # Make the API request
     response = requests.get(base_url, params=params)
+    print(response.text)
     if response.status_code == 200:
         links= response.json().get("items", [])
         if links:
@@ -38,7 +45,6 @@ def perform_search(query, search_type="web"):
             print("No links found in the given text.")
             return None
     else:
-        print(response.text)
         print("Error: Unable to perform the search.")
         return None
     
@@ -68,9 +74,6 @@ async def help_command(update:Update,context:ContextTypes.DEFAULT_TYPE):
 async def food_command(update:Update,context:ContextTypes.DEFAULT_TYPE):
     for i in jsonString['food']:
         await context.bot.send_photo(chat_id=update.effective_chat.id, photo = i) 
-    #await context.bot.send_photo(chat_id=update.effective_chat.id, photo = "https://ibb.co/6bvk0YP")
-    #await context.bot.send_photo(chat_id=update.effective_chat.id, photo = "https://ibb.co/fY0xSRj")
-    #await context.bot.send_photo(chat_id=update.effective_chat.id, photo = "https://imgtr.ee/image/IId5rv")
 
     
 async def support_command(update:Update,context:ContextTypes.DEFAULT_TYPE):
@@ -79,13 +82,11 @@ async def support_command(update:Update,context:ContextTypes.DEFAULT_TYPE):
 #handle responses
 
 def handle_response(text:str):
-    gtext= perform_search(text)
-    if not text.isalpha():
-        return "من فضلك ادخل اسم العلامة التجارية \n please write brand name"
-    if not gtext:
-        return "هذا المنتج غير مقاطعة\n Not found!"
-    if gtext.lower() in [i["name"] for i in jsonString['brands']]:
-        brand_info = get_reason_by_brand(gtext.lower())
+    text = translate_arabic_to_english(text)
+    text=text.replace(" ", "").replace("'","")
+    print(text)
+    if text.lower()  in [i["name"] for i in jsonString['brands']]: #or  gtext.lower() in [i["name"] for i in jsonString['brands']]:
+        brand_info = get_reason_by_brand(text.lower())
         return f"Yes, boycott this product\nنعم قاطع هذه العلامة التجارية\n{brand_info}"
     else: 
         return "هذا المنتج غير مقاطعة\n Not found!"
