@@ -5,6 +5,9 @@ from translate import Translator
 import json
 import requests
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 TOKEN: Final = os.environ['BOT_TOKEN']
 BOT_USERNAME: Final = os.environ['BOT_NAME']
