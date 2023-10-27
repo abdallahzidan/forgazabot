@@ -82,10 +82,11 @@ def handle_response(text:str):
     gtext= perform_search(text)
     if not text.isalpha():
         return "من فضلك ادخل اسم العلامة التجارية \n please write brand name"
+    if not gtext:
+        return "هذا المنتج غير مقاطعة\n Not found!"
     if gtext.lower() in [i["name"] for i in jsonString['brands']]:
         brand_info = get_reason_by_brand(gtext.lower())
         return f"Yes, boycott this product\nنعم قاطع هذه العلامة التجارية\n{brand_info}"
-        
     else: 
         return "هذا المنتج غير مقاطعة\n Not found!"
     
