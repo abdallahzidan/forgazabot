@@ -2,17 +2,52 @@ from typing import Final
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes,filters
 import json
+import requests
+import re 
 
-TOKEN :Final = "********************"
+TOKEN :Final = "***"
 BOT_USERNAME :Final  = "@savegazabot"
+API_KEY = "**"
+SEARCH_ENGINE_ID = "**"
 
 jsonString = {}
  
 with open('brands.json') as json_file:
     jsonString = json.load(json_file)
     
+def perform_search(query, search_type="web"):
+    # Construct the URL for the Google Custom Search JSON API
+    base_url = "https://www.googleapis.com/customsearch/v1"
+    params = {
+        "key": API_KEY,
+        "cx": SEARCH_ENGINE_ID,
+        "q": query,
+        "searchType": "SEARCH_TYPE_UNDEFINED",
+    }
 
-
+    # Make the API request
+    response = requests.get(base_url, params=params)
+    if response.status_code == 200:
+        links= response.json().get("items", [])
+        if links:
+            print(links[0])
+            first_link = links[0]['link'].split('.')[1].replace('com/','')
+            print(first_link)
+            return first_link
+        else:
+            print("No links found in the given text.")
+            return None
+    else:
+        print(response.text)
+        print("Error: Unable to perform the search.")
+        return None
+    
+def get_reason_by_brand(brand_name):
+    for brand in jsonString["brands"]:
+        if brand["name"].lower() == brand_name.lower():
+            return brand["reason"]
+    return "Brand not found."
+    
 #commands
 async def start_command(update:Update,context:ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(" لا تكن شريك في الجريمة .. قاطع من أجل غزة .. من أجل الانسانية \n Do not be an accomplice in crime. Stand with Gaza, stand  with humanity.. !")
@@ -25,15 +60,6 @@ async def start_command(update:Update,context:ContextTypes.DEFAULT_TYPE):
     #await context.bot.send_photo(chat_id=update.effective_chat.id, photo = "https://ibb.co/fN52j1x")
     await update.message.reply_text(" أكتب إسم العلامة التجارية بالانجليزية و سنخبرك اذا ما كان عليك مقاطعتها\n Please Write the brand name in English and we will tell you if you should boycott it .. !")
 
-#    
-# Hewlett Packard helps run the biometric ID system that Israel uses to restrict Palestinian movement. For more information, see https://bdsmovement.net/boycott-hp. \n \
-#     2- AXA invests in Israeli banks, which finance the theft of Palestinian land and natural resources. Do not buy insurance policies with AXA, or if you currently have an insurance policy with them, try cancelling it. For more information visit: https://bdsmovement.net/axa-divest \n \
-#     3- 	Coca-Cola is an American multinational corporation. Coca-Cola Israel owns dairy farms in illegal Israeli settlements \n\
-#     4-  Starbucks is an American multinational chain of coffeehouses. Starbucks has opened outlets in US bases in Afghanistan and Iraq and at the illegal torture center in Guantanamo Bay. Starbucks also sponsors fundraisers for Israel \n\
-#     5-  McDonald’s Corporation is an American multinational fast-food chain. Its products include hamburgers, chicken, french fries, soft drinks, shakes, salads, desserts, hotcakes, coffee, breakfast, and wraps. McDonald’s offers free meals to hospitals and Israeli defense forces \n \
-#     6-  Siemens is the largest industrial manufacturing company in Europe for buildings and distributed energy systems, and it will link Israel’s electricity grid with Europe \n\
-#     7-  Puma SE is a German multinational corporation that manufactures athletic and casual footwear, apparel, and accessories. Puma sponsors the Israel Football Association \n\
-#     8-  Sabra Dipping Company is a joint venture that produces food products. Sabra is co-owned by PepsiCo and the Strauss Group, which provides financial support to the Israeli army \n")
 
 async def help_command(update:Update,context:ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(" أكتب إسم العلامة التجارية بالانجليزية و سنخبرك اذا ما كان عليك مقاطعتها\n Please Write the brand name in English and we will tell you if you should boycott it .. !")
@@ -53,11 +79,12 @@ async def support_command(update:Update,context:ContextTypes.DEFAULT_TYPE):
 #handle responses
 
 def handle_response(text:str):
-    if not text.isascii():
-        return "من فضلك ادخل اسم العلامة التجارية بالاحرف الانجليزيه \n please write brand name in english letters"
-    if text.lower() in [i["name"] for i in jsonString['brands']]:
-        return "Yes, boycott this product \n نعم قاطع هذه العلامه التجارية  "
-        
+    gtext= perform_search(text)
+    if not text.isalpha():
+        return "من فضلك ادخل اسم العلامة التجارية \n please write brand name"
+    if gtext.lower() in [i["name"] for i in jsonString['brands']]:
+        brand_info = get_reason_by_brand(gtext.lower())
+        return f"Yes, boycott this product\nنعم قاطع هذه العلامة التجارية\n{brand_info}"
         
     else: 
         return "هذا المنتج غير مقاطعة\n Not found!"
