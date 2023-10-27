@@ -3,127 +3,159 @@
     {
       "name": "starbucks",
       "logo": "https://i.postimg.cc/FFdPkb7K/STARBUCKS.png",
-      "category": "food"
+      "category": "food",
+      "reason":"Starbucks is an American multinational chain of coffeehouses. Starbucks has opened outlets in US bases in Afghanistan and Iraq and at the illegal torture center in Guantanamo Bay. Starbucks also sponsors fundraisers for Israel "
     },
     {
       "name": "mcdonalds",
       "logo": "https://i.postimg.cc/QN2fQBTJ/MACKDONLAS.png",
-      "category": "food"
+      "category": "food",
+      "reason":"cDonald’s Corporation is an American multinational fast-food chain. Its products include hamburgers, chicken, french fries, soft drinks, shakes, salads, desserts, hotcakes, coffee, breakfast, and wraps. McDonald’s offers free meals to hospitals and Israeli defense forces"
+    },
+    {
+      "name": "kfc",
+      "logo": "",
+      "category": "food",
+      "reason":""
     },
     {
       "name": "carrefour",
       "logo": "https://i.postimg.cc/8cRMBz2Z/carfour.png",
-      "category": "market"
+      "category": "market",
+      "reason":""
     },
     {
       "name": "dominos",
       "logo": "https://i.postimg.cc/L5x6pdLH/dominos.png",
-      "category": "food"
+      "category": "food",
+      "reason":""
     },
     {
       "name": "papajohns",
       "logo": "https://i.postimg.cc/jSpqK4wJ/PAPAJONES.png",
-      "category": "food"
+      "category": "food",
+      "reason":""
     },
     {
       "name": "burgerking",
       "logo": "https://i.postimg.cc/SRPFdmcz/burgerking.png",
-      "category": "food"
+      "category": "food",
+      "reason":""
     },
     {
       "name": "subway",
       "logo": "https://i.postimg.cc/4NvjnvS9/subway.png",
-      "category": "food"
+      "category": "food",
+      "reason":""
     },
     {
       "name": "pizzahut",
       "logo": "https://i.postimg.cc/BQPds9xM/pizza-king.png",
-      "category": "food"
+      "category": "food",
+      "reason":""
     },
     {
       "name": "nestle",
       "logo": "https://i.postimg.cc/xTPF9fXG/nstle.png",
-      "category": "food"
+      "category": "food",
+      "reason":""
     },
     {
       "name": "hardees",
       "logo": "https://i.postimg.cc/59Bsm4Sc/hardees.png",
-      "category": "food"
+      "category": "food",
+      "reason":""
     },
     {
       "name": "cocacola",
       "logo": "https://i.postimg.cc/x1hG2h3y/cocacola.png",
-      "category": "food"
+      "category": "food",
+      "reason": "Coca-Cola is an American multinational corporation. Coca-Cola Israel owns dairy farms in illegal Israeli settlements "
     },
     {
       "name": "pepsi",
       "logo": "https://i.postimg.cc/x1hG2h3y/cocacola.png",
-      "category": "food"
+      "category": "food",
+      "reason":""
     },
     {
       "name": "lipton",
       "logo": "https://i.postimg.cc/T1dg06TG/libton.png",
-      "category": "food"
+      "category": "food",
+      "reason":""
     },
     {
       "name": "nike",
       "logo": "https://i.postimg.cc/28WXMdDt/nike.png",
-      "category": "fashoin"
+      "category": "fashoin",
+      "reason":""
     },
     {
       "name": "zalando",
       "logo": "https://i.postimg.cc/WpHw8RL6/ZALANDO.png",
-      "category": "fashoin"
+      "category": "fashoin",
+      "reason":""
     },
     {
       "name": "puma",
       "logo": "https://i.postimg.cc/mDW0tcVk/PUMA.png",
-      "category": "fashoin"
+      "category": "fashoin",
+      "reason": "Puma SE is a German multinational corporation that manufactures athletic and casual footwear, apparel, and accessories. Puma sponsors the Israel Football Association "
     },
     {
       "name": "adidas",
       "logo": "https://i.postimg.cc/k4Cp70Xt/ADDIDAS.png",
-      "category": "fashoin"
+      "category": "fashoin",
+      "reason":""
     },
     {
       "name": "hp",
       "logo": "https://i.postimg.cc/3RKk5FVF/hp.png",
-      "category": "it"
+      "category": "it",
+      "reason":"Hewlett Packard helps run the biometric ID system that Israel uses to restrict Palestinian movement. For more information, see https://bdsmovement.net/boycott-hp. \n "
+      
     },
     {
       "name": "ibm",
       "logo": "https://i.postimg.cc/x8Z8mDC6/IBM.png",
-      "category": "it"
+      "category": "it",
+      "reason":""
     },
     {
       "name": "oracle",
       "logo": "https://i.postimg.cc/zX93Xr4B/oracle.png",
-      "category": "it"
+      "category": "it",
+      "reason":""
     },
     {
       "name": "sap",
       "logo": "https://i.postimg.cc/qRbvfV8p/sap.png",
-      "category": "it"
+      "category": "it",
+      "reason":""
     },
     {
       "name": "Siemens",
       "logo": "https://i.postimg.cc/7PJ5vhQc/semiens.png",
-      "category": "it"
+      "category": "it",
+      "reason":""
     },
     {
       "name": "Siemens",
       "logo": "https://i.postimg.cc/7PJ5vhQc/semiens.png",
-      "category": "it"
+      "category": "it",
+      "reason":""
     },
     {
       "name": "audi",
       "logo": "https://i.postimg.cc/jSc567LW/audi.png",
-      "category": "motor"
+      "category": "motor",
+      "reason":""
     },
     {
       "name": "Hyundai",
       "logo": "https://i.postimg.cc/4dDN4vF0/hyyndai.png",
-      "category": "motor"
+      "category": "motor",
+      "reason":""
     },
     {
       "name": "bmw",
@@ -133,12 +165,14 @@
     {
       "name": "axa",
       "logo": "https://i.postimg.cc/3w0srM5K/axa.png",
-      "category": "insurance"
+      "category": "insurance",
+      "reason":"AXA invests in Israeli banks, which finance the theft of Palestinian land and natural resources. Do not buy insurance policies with AXA, or if you currently have an insurance policy with them, try cancelling it. For more information visit: https://bdsmovement.net/axa-divest "
     },
     {
       "name": "Siemens",
       "logo": "https://i.postimg.cc/GtRwSXfb/allianz.png",
-      "category": "insurance"
+      "category": "insurance",
+      "reason":"Siemens is the largest industrial manufacturing company in Europe for buildings and distributed energy systems, and it will link Israel’s electricity grid with Europe "
     }
     
   ]
