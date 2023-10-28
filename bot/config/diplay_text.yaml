@@ -1,0 +1,16 @@
+ar:
+  start_command: " لا تكن شريكا في الجريمة .. قاطع من أجل غزة .. من أجل الانسانية "
+  help_command: " أكتب إسم العلامة التجارية بالانجليزية و سنخبرك اذا ما كان عليك مقاطعتها"
+  support_command: " يمكنك مساعدة غزة خلال الطرق التالية"
+  handle_response_true: " هذه الشركة تدعم الاحتلال الإسرائيلي"
+  handle_response_false: "لاتوجد معلومات عن هذه الشركة"
+  handle_response_wrong_input: " عفوا لم افهم ما كتبت من فضلك أعد كتابة اسم العلامه التجارية بشكل صحيح"
+
+en:
+  start_command: "Do not be an accomplice in crime. Stand with Gaza, stand  with humanity.."
+  help_command: "Please Write the brand name in English and we will tell you if you should boycott it"
+  support_command: "You can support Gaza by the following  "
+  handle_response_true: "This brand supports the Israeli occupation"
+  handle_response_false: "No record found on this brand"
+  handle_response_wrong_input: "Sorry, I did not understand Please rewrite the brand name correctly"
+
