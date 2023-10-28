@@ -104,6 +104,16 @@ async def support_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         3- Unrwa  : https://support.savethechildren.org/site/Donation2?df_id=10067&10067.donation=form1&mfc_pref=T
         """
     )
+async def story_command(update:Update,context:ContextTypes.DEFAULT_TYPE):
+    
+    await context.bot.send_photo(chat_id=update.effective_chat.id, photo = "https://imageupload.io/UuflLQyJjOGkfeW")
+    await update.message.reply_text("https://www.jerusalemstory.com/en")
+    await update.message.reply_text("https://www.facebook.com/mhammed.taheer/videos/1932200987173473/")
+    await update.message.reply_text("https://www.facebook.com/JoeHusseinLovers/videos/329283599683891/")
+    await update.message.reply_text("https://www.facebook.com/JoeHusseinLovers/videos/2475401965952994/ ")
+    await update.message.reply_text("https://www.instagram.com/p/CyxwIbtso96/")
+    await update.message.reply_text("https://www.instagram.com/p/CyvNFvBoA50/ ")
+    await update.message.reply_text("https://www.instagram.com/p/CyqnekKKxfv/")
 
 
 # handle responses
@@ -137,5 +147,6 @@ if __name__ == "__main__":
     app.add_handler(CommandHandler("start", start_command))
     app.add_handler(CommandHandler("help", help_command))
     app.add_handler(CommandHandler("support", support_command))
+    app.add_handler(CommandHandler('story',story_command))
     app.add_handler(MessageHandler(filters.TEXT, handle_message))
     app.run_polling(poll_interval=3)
