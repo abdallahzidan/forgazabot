@@ -19,9 +19,9 @@ SEARCH_ENGINE_ID = os.environ["SEARCH_ENGINE_ID"]
 
 brands_data = {}
 config_data = {}
-yaml_file_path = r"config\display_text.yaml"
+yaml_file_path = r"bot/config/display_text.yaml"
 
-with open("config/brands.json") as json_file:
+with open("bot/config/brands.json") as json_file:
     brands_data = json.load(json_file)
 
 with open(yaml_file_path, "r", encoding="utf-8") as file:

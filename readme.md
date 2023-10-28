@@ -11,18 +11,19 @@ Telegram bot targets consumer boycotts and convinces retailers across the world 
     ```
 -   configure environment variables in `.env` file
     ```bash
-        cp .env.sample .env
+    cp .env.sample .env
     ```
 -   start bot in virtual environment
     ```bash
-    cd bot
-    poetry run python -m main
+    poetry run python -m bot
     ```
 
 ## Launch in Docker
 
 -   configure environment variables in `.env` file
-
+    ```bash
+    cp .env.sample .env
+    ```
 -   start virtual environment
     ```bash
     poetry shell
@@ -33,7 +34,7 @@ Telegram bot targets consumer boycotts and convinces retailers across the world 
     ```
 -   start service
     ```bash
-    docker-compose -f docker/docker-compose.yaml up
+    docker-compose -f docker/docker-compose.yaml up -d
     ```
 
 # 🌍 Environment variables
