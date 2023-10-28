@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: forgazabot-deployment
+  namespace: forgazabot
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: forgazabot-deployment
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: forgazabot-deployment
+    spec:
+      containers:
+      - name: forgazabot
+        image: "python:3.11-slim-bullseye"
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "128m"
+          limits:
+            memory: "2048Mi"
+            cpu: "1024m"
+        command:
+        - /bin/sh
+        - -c
+        - |
+          apt update
+          apt install git -y
+          git clone https://github.com/abdallahzidan/forgazabot; echo "Cloned forgazabot"
+          cd forgazabot
+          python -m pip install --upgrade pip --no-cache-dir poetry
+          python -m pip install poetry --no-cache-dir poetry
+          poetry install --without dev --no-root
+          poetry run python -m bot
+        envFrom:
+          - secretRef:
+              name: forgazabot-secret
+        env:
+        - name: POETRY_NO_INTERACTION
+          value: "1"
+        - name: POETRY_VIRTUALENVS_CREATE
+          value: "1"
+        - name: POETRY_VIRTUALENVS_IN_PROJECT
+          value: "1"
+        - name: POETRY_CACHE_DIR
+          value: "/tmp/poetry_cache"
