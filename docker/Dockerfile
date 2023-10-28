@@ -11,8 +11,6 @@ COPY ./ ./
 
 RUN pip install --no-cache-dir poetry && \
     poetry install --without dev --no-root &&  \
-    rm -rf ${POETRY_CACHE_DIR} && \
-    cd bot && \
-    poetry run python -m main \
+    rm -rf ${POETRY_CACHE_DIR}
 
-ENTRYPOINT ["poetry", "run", "python", "-m", "main"]
+ENTRYPOINT ["poetry", "run", "python", "-m", "bot"]
