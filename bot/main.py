@@ -13,7 +13,8 @@ BOT_USERNAME :Final  = "@savegazabot"
 API_KEY = "***"
 brands_data = {}
 config_data={}
- 
+yaml_file_path = "config\display_text.yaml"
+
 with open('config/brands.json') as json_file:
     brands_data = json.load(json_file)
 
