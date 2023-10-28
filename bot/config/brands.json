@@ -1,100 +1,124 @@
 {
-  "brands":[
+  "brands": [
     {
       "name": "starbucks",
       "logo": "https://i.postimg.cc/FFdPkb7K/STARBUCKS.png",
       "category": "food",
-      "reason":"Starbucks is an American multinational chain of coffeehouses. Starbucks has opened outlets in US bases in Afghanistan and Iraq and at the illegal torture center in Guantanamo Bay. Starbucks also sponsors fundraisers for Israel "
+      "reason": "Starbucks is an American multinational chain of coffeehouses. Starbucks has opened outlets in US bases in Afghanistan and Iraq and at the illegal torture center in Guantanamo Bay. Starbucks also sponsors fundraisers for Israel https://bdsmovement.net/tags/starbucks "
+    },
+    {
+      "name": "cat",
+      "logo": "",
+      "category": "food",
+      "reason": "The occupation forces use Caterpillar CAT bulldozers to demolish Palestinian homes and bulldoze their farms, and they also used them in the Israeli massacres in Gaza. The company designed a fortified bulldozer specifically for the Israeli army. Manufacturer of CAT clothing and shoes https://www.youtube.com/watch?v=EC6C-cAc240 "
+    },
+    {
+      "name": "ahava",
+      "logo": "",
+      "category": "food",
+      "reason": "Ahava Cosmetics relies on natural resources illegally extracted from the shores of the Dead Sea in the occupied Palestinian territory. It is one of the most internationally known Israeli exporting companies, as its products are not only sold in stores but are also marketed online and provides delivery service to all Arab countries through its headquarters in Britain. Boycott Ahava and all its products"
+    },
+    {
+      "name": "hyundai",
+      "logo": "",
+      "category": "motor",
+      "reason": "The Israeli authorities use Hyundai Heavy Industries bulldozers in settlement construction and operate specifically in the Barkan Industrial Zone. The company's equipment is also used to demolish Palestinian homes, especially in Jerusalem and the Negev,  as well as to demolish homes in the occupied Syrian Golan. Boycott Hyundai products https://bdsmovement.net/news/boycott-hyundai-end-its-complicity-israel%E2%80%99s-ethnic-cleansing-palestinian-communities-jer"
+    },
+    {
+      "name": "eden",
+      "logo": "",
+      "category": "food",
+      "reason": "Eden Springs sells mineral water in many countries around the world, and operates a bottling plant in the occupied Syrian Golan Heights https://bdsmovement.net/news/university-dundee-says-goodbye-israeli-company-eden-springs"
     },
     {
       "name": "mcdonalds",
       "logo": "https://i.postimg.cc/QN2fQBTJ/MACKDONLAS.png",
       "category": "food",
-      "reason":"cDonald’s Corporation is an American multinational fast-food chain. Its products include hamburgers, chicken, french fries, soft drinks, shakes, salads, desserts, hotcakes, coffee, breakfast, and wraps. McDonald’s offers free meals to hospitals and Israeli defense forces"
+      "reason": "cDonald’s Corporation is an American multinational fast-food chain. Its products include hamburgers, chicken, french fries, soft drinks, shakes, salads, desserts, hotcakes, coffee, breakfast, and wraps. McDonald’s offers free meals to hospitals and Israeli defense forces https://www.youtube.com/watch?v=NyPVnMszH90"
     },
     {
       "name": "kfc",
       "logo": "",
       "category": "food",
-      "reason":" --"
+      "reason": " https://www.quora.com/Does-KFC-support-Israel"
     },
     {
       "name": "carrefour",
       "logo": "https://i.postimg.cc/8cRMBz2Z/carfour.png",
       "category": "market",
-      "reason":" --"
+      "reason": " https://bdsmovement.net/boycott-carrefour"
     },
     {
       "name": "dominos",
       "logo": "https://i.postimg.cc/L5x6pdLH/dominos.png",
       "category": "food",
-      "reason":" --"
+      "reason": "Opposition to the location of Domino's stores: Critics of the company may object to the presence of Domino's in Israeli settlements in the West Bank, which are considered illegal under international law by some countries and organizations. "
     },
     {
       "name": "papajohns",
       "logo": "https://i.postimg.cc/jSpqK4wJ/PAPAJONES.png",
       "category": "food",
-      "reason":" --"
+      "reason": " --"
     },
     {
       "name": "burgerking",
       "logo": "https://i.postimg.cc/SRPFdmcz/burgerking.png",
       "category": "food",
-      "reason":" --"
+      "reason": "Burger King in Israel is facing calls for a boycott after it posted photos showing that it was donating free meals to Israeli soldiers amid ongoing fighting with Hamas. https://www.newsweek.com/burger-king-faces-boycott-giving-free-food-israeli-soldiers-1837005"
     },
     {
       "name": "subway",
       "logo": "https://i.postimg.cc/4NvjnvS9/subway.png",
       "category": "food",
-      "reason":" --"
+      "reason": " https://www.indy100.com/sport/megan-rapinoe-subway-boycott-us-b1900576"
     },
     {
       "name": "pizzahut",
       "logo": "https://i.postimg.cc/BQPds9xM/pizza-king.png",
       "category": "food",
-      "reason":" --"
+      "reason": " https://www.independent.co.uk/news/world/middle-east/palestinian-pizza-hut-boycott-hunger-strikers-israel-branch-advert-facebook-barbed-wire-a7728531.html "
     },
     {
       "name": "nestle",
       "logo": "https://i.postimg.cc/xTPF9fXG/nstle.png",
       "category": "food",
-      "reason":" --"
+      "reason": " --"
     },
     {
       "name": "hardees",
       "logo": "https://i.postimg.cc/59Bsm4Sc/hardees.png",
       "category": "food",
-      "reason":" --"
+      "reason": " --"
     },
     {
       "name": "cocacola",
       "logo": "https://i.postimg.cc/x1hG2h3y/cocacola.png",
       "category": "food",
-      "reason": "Coca-Cola is an American multinational corporation. Coca-Cola Israel owns dairy farms in illegal Israeli settlements "
+      "reason": "Coca-Cola is an American multinational corporation. Coca-Cola Israel owns dairy farms in illegal Israeli settlements  https://www.foa.org.uk/campaign/boycottcocacola"
     },
     {
       "name": "pepsi",
       "logo": "https://i.postimg.cc/x1hG2h3y/cocacola.png",
       "category": "food",
-      "reason":" --"
+      "reason": " --"
     },
     {
       "name": "lipton",
       "logo": "https://i.postimg.cc/T1dg06TG/libton.png",
       "category": "food",
-      "reason":" --"
+      "reason": " --"
     },
     {
       "name": "nike",
       "logo": "https://i.postimg.cc/28WXMdDt/nike.png",
       "category": "fashoin",
-      "reason":" --"
+      "reason": " --"
     },
     {
       "name": "zalando",
       "logo": "https://i.postimg.cc/WpHw8RL6/ZALANDO.png",
       "category": "fashoin",
-      "reason":" --"
+      "reason": " --"
     },
     {
       "name": "puma",
@@ -106,56 +130,55 @@
       "name": "adidas",
       "logo": "https://i.postimg.cc/k4Cp70Xt/ADDIDAS.png",
       "category": "fashoin",
-      "reason":" --"
+      "reason": " --"
     },
     {
       "name": "hp",
       "logo": "https://i.postimg.cc/3RKk5FVF/hp.png",
       "category": "it",
-      "reason":"Hewlett Packard helps run the biometric ID system that Israel uses to restrict Palestinian movement. For more information, see https://bdsmovement.net/boycott-hp. \n "
-      
+      "reason": "Hewlett Packard helps run the biometric ID system that Israel uses to restrict Palestinian movement. For more information, see https://bdsmovement.net/boycott-hp. \n "
     },
     {
       "name": "ibm",
       "logo": "https://i.postimg.cc/x8Z8mDC6/IBM.png",
       "category": "it",
-      "reason":" --"
+      "reason": " --"
     },
     {
       "name": "oracle",
       "logo": "https://i.postimg.cc/zX93Xr4B/oracle.png",
       "category": "it",
-      "reason":" --"
+      "reason": " --"
     },
     {
       "name": "sap",
       "logo": "https://i.postimg.cc/qRbvfV8p/sap.png",
       "category": "it",
-      "reason":" --"
+      "reason": " --"
     },
     {
       "name": "Siemens",
       "logo": "https://i.postimg.cc/7PJ5vhQc/semiens.png",
       "category": "it",
-      "reason":" --"
+      "reason": " --"
     },
     {
       "name": "Siemens",
       "logo": "https://i.postimg.cc/7PJ5vhQc/semiens.png",
       "category": "it",
-      "reason":" --"
+      "reason": " --"
     },
     {
       "name": "audi",
       "logo": "https://i.postimg.cc/jSc567LW/audi.png",
       "category": "motor",
-      "reason":" --"
+      "reason": " --"
     },
     {
       "name": "Hyundai",
       "logo": "https://i.postimg.cc/4dDN4vF0/hyyndai.png",
       "category": "motor",
-      "reason":" --"
+      "reason": " --"
     },
     {
       "name": "bmw",
@@ -166,14 +189,13 @@
       "name": "axa",
       "logo": "https://i.postimg.cc/3w0srM5K/axa.png",
       "category": "insurance",
-      "reason":"AXA invests in Israeli banks, which finance the theft of Palestinian land and natural resources. Do not buy insurance policies with AXA, or if you currently have an insurance policy with them, try cancelling it. For more information visit: https://bdsmovement.net/axa-divest "
+      "reason": "AXA invests in Israeli banks, which finance the theft of Palestinian land and natural resources. Do not buy insurance policies with AXA, or if you currently have an insurance policy with them, try cancelling it. For more information visit: https://bdsmovement.net/axa-divest "
     },
     {
       "name": "Siemens",
       "logo": "https://i.postimg.cc/GtRwSXfb/allianz.png",
       "category": "insurance",
-      "reason":"Siemens is the largest industrial manufacturing company in Europe for buildings and distributed energy systems, and it will link Israel’s electricity grid with Europe "
+      "reason": "Siemens is the largest industrial manufacturing company in Europe for buildings and distributed energy systems, and it will link Israel’s electricity grid with Europe "
     }
-    
   ]
 }
